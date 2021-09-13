@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>JS Variable Decleration and Operators!</h3>
+    <script>
+        let a=3; // = assignment operator 
+        let b=4;
+        console.log(a,b);
+
+        let c=a+b;
+        console.log(c);
+
+        let myString='A ' + 'String';
+        console.log(myString);
+
+        //Unary Operator
+        // ! ++ --
+        // ! negation operator
+
+        let single = true;
+        console.log(!single);
+
+        // ++ increment operator 
+        let d = 5;
+        d++ ;
+        console.log(d);
+        // 5+1 = 6
+        ++d ;
+        console.log(d);
+        //5+2 = 7
+
+        let e = 3 + d++;
+        console.log(e,d);
+        // d++ 6+2= 8
+        // e = 3 + 8 =10
+
+        let f = 3 + ++d;
+        console.log(f,d);
+        //  ++d 7+2 = 9
+        // f = 3+9 = 12
+
+        // -- decrement operator
+        d = 5;
+        --d;
+        console.log(d);
+        // --d 5-1=4
+
+        d--;
+        console.log(d);
+        // d-- 5-2 =3 
+
+        e = 3 + d--;
+        console.log(e,d);
+        // d-- 3-1=2
+        // e = 3+1+2=6
+
+        e = 3 + --d;
+        console.log(e,d);
+        // --d 4-3 =1 right to left
+        // e = 3+1 = 4
+
+        // binary operation 
+        // + - * / % modulous **
+
+        let num1 = 5;
+        let num2 = 3;
+
+        let sum = num1 + num2
+        console.log(num1, num2, sum);
+
+        let sub = num1 - num2 ;
+        console.log(num1, num2, sub);
+
+        let mul= num1 * num2 ;
+        console.log(num1, num2, mul);
+
+        let div = num1 / num2;
+        console.log(num1, num2, div.toFixed(2));
+
+        let mod = num1 % num2;
+        console.log(num1, num2, mod);
+
+        let pow = num1 ** num2;
+        console.log(num1, num2, pow);
+
+        //ternary operator
+        // ? : 
+
+        let result=(5%2==1)? 'ODD':'EVEN';
+        console.log(result);
+
+        let result1=(4%2==1)? 'ODD':'EVEN';
+        console.log(result1);
+
+
+
+    </script>
+
+</body>
+</html>
