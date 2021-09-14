@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+</head>
+<body>
+    <h3>Js calculator</h3>
+    
+    <label for="firstNumber">First Number</label>
+    <input type="number" name="firstNumber" id="firstNumber"> <br>
+    <label for="secondNumber">Second Number</label>
+    <input type="number" name="secondNumber" id="secondNumber"> <br>
+    <button onclick="calculate()">Calculate</button>
+    <label id="result"></label> <br>
+
+    <script>
+
+        function calculate(){
+            let firstNumber = parseInt( document.querySelector("#firstNumber").value);
+            let secondNumber = parseInt( document.querySelector("#secondNumber").value);
+            console.log(firstNumber, secondNumber)
+            let sum = firstNumber + secondNumber;
+            let sub = firstNumber - secondNumber; 
+            let mul = firstNumber * secondNumber;
+            let div = firstNumber / secondNumber;
+            let mol = firstNumber % secondNumber;
+
+            let result = ` <br> Sum : ${sum} <br> Sub : ${sub} <br> Mul : ${mul} <br> 
+            Div : ${div.toFixed(2)} <br> Mol : ${mol} <br> `
+            console.log(result);
+
+           
+            document.querySelector("#result").innerHTML=result;
+        }
+
+        function calculateByPrompt(){
+         // 1==>input request 2 numbers
+         // assign prompted valuse to firstNumber and secondNumber
+         let firstNumber= parseInt(prompt('Enter first number!'));
+         let secondNumber= parseInt(prompt('Enter second number!'));
+         console.log(firstNumber, secondNumber);
+        // 2==>process sum sub mul div mod
+        let sum = firstNumber + secondNumber;
+        let sub = firstNumber - secondNumber; 
+        let mul = firstNumber * secondNumber;
+        let div = firstNumber / secondNumber;
+        let mol = firstNumber % secondNumber;
+        // 3==>output console log the result
+        console.log(sum, sub, mul, div.toFixed(2), mol);
+
+        document.write(`First Number : ${firstNumber} <br>`);
+        document.write(`Second Number : ${secondNumber} <br>`);
+        document.write(`Sum : ${sum} <br>`);
+        document.write(`Sub : ${sub} <br>`);
+        document.write(`Mul : ${mul} <br>`);
+        document.write(`Div : ${div.toFixed(2)} <br>`);
+        document.write(`Mol : ${mol} <br>`);
+    }
+    </script>
+</body>
+</html>

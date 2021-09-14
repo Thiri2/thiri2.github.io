@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison</title>
+</head>
+<body>
+    <h3>JS Comparison and Conditionals</h3>
+
+    <script>
+        let a=40;
+
+        if(a<=50) {
+            let a=4; 
+            // let cannot mention again but can mention inside block scope{}
+            console.log("Yes!", a);
+        }
+
+        console.log(a);
+
+        if(a%2==0) console.log('Yes again!');
+
+        if(a%2===1) {
+            console.log('cannot divide by 2');
+        } else{
+            console.log('can divide by 2');
+        }
+
+        if(a>0) {
+            console.log('Positive');
+        } else if(a<0){
+            console.log('Negative');
+        }else{
+            console.log('Zero');
+        }
+        let ans=confirm('Are you sure?');
+        console.log(ans);
+        // ok = true cancel = false
+        if(ans) {
+            console.log('user has confirmed!'); // true
+        } else {
+            console.log('user has cancelled!'); //false
+        }
+
+        // prompt box
+
+        let yourName=prompt('Enter your name!') // ask a value from the user
+        alert('Welcome!' + yourName); 
+        alert(`Welcome! ${yourName}`)
+
+    </script>
+
+    
+    
+
+</body>
+</ht

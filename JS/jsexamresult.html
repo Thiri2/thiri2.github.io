@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Result</title>
+</head>
+<body>
+    <h3>Exam Result</h3>
+
+    <label for="Subject1">Subject 1</label>
+    <input type="number" name="Subject1" id="Subject1"><br>
+    <label for="Subject2">Subject 2</label>
+    <input type="number" name="Subject2" id="Subject2"> <br>
+    <label for="Subject3">Subject 3</label>
+    <input type="number" name="Subject3" id="Subject3">
+    <button onclick="calculate()">Calculate</button>
+    <label id="total"></label>
+
+    <script>
+    function calculate() {
+    let Subject1 = parseInt( document.querySelector("#Subject1").value);
+    let Subject2 = parseInt( document.querySelector("#Subject2").value);
+    let Subject3 = parseInt( document.querySelector("#Subject3").value);      
+    console.log(Subject1, Subject2, Subject3)
+            let sum = Subject1 +Subject2 + Subject3;
+
+            let total = ` <br> Sum : ${sum}`
+            console.log(total);
+
+            document.querySelector("#total").innerHTML=total;
+
+    }
+    </script>
+    
+</body>
+</html>
