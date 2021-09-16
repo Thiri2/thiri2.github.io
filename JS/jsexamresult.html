@@ -14,9 +14,10 @@
     <label for="Subject2">Subject 2</label>
     <input type="number" name="Subject2" id="Subject2"> <br>
     <label for="Subject3">Subject 3</label>
-    <input type="number" name="Subject3" id="Subject3">
-    <button onclick="calculate()">Calculate</button>
-    <label id="total"></label>
+    <input type="number" name="Subject3" id="Subject3"> <br>
+    <button onclick="calculate()">Calculate</button> <br>
+    <label id="total"></label> <br>
+    <label id="result">Result :</label>
 
     <script>
     function calculate() {
@@ -24,14 +25,36 @@
     let Subject2 = parseInt( document.querySelector("#Subject2").value);
     let Subject3 = parseInt( document.querySelector("#Subject3").value);      
     console.log(Subject1, Subject2, Subject3)
+
+    let max=100;
+    let min=0;
+    if ( (Subject1>=min&&Subject1<=max) && (Subject2>=min&&Subject2<=max) && (Subject3>=min&&Subject3<=max)) {
+
             let sum = Subject1 +Subject2 + Subject3;
 
-            let total = ` <br> Sum : ${sum}`
+            let total = ` <br> Total : ${sum}`
             console.log(total);
 
             document.querySelector("#total").innerHTML=total;
 
+            let examResult='Pass with Distinction';
+
+            if (Subject1>=40 && Subject2>=40 && Subject3>=40) {
+               examResult='Pass!';
+               if (Subject1>=80 || Subject2>=80 || Subject3>=80) {
+                   examResult='Pass with Distinction!';
+               }
+            } else {
+                examResult='Fail!';
+            }
+            document.querySelector("#result").innerHTML=examResult;
+
+    }else{
+        alert('Please enter marks value in 0 to 100!');
     }
+    }
+
+
     </script>
     
 </body>
