@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Object</title>
+</head>
+<body>
+    <h3>JS Object</h3>
+    <script>
+
+        // two ways to announce
+        const car = {
+            brand : 'ford' ,
+            model : 'Esport' //properties : value 
+
+        };
+
+        const car1= new Object();
+
+        const car2 = Object.create(car); //use to add another properties
+        console.log(car,car1,car2);
+
+        function car3(brand,model){
+            this.brand=brand
+            this.model=model
+        }
+        const myCar = new car3 ('Ford' , 'Everest');
+        console.log(myCar);
+        console.log(myCar.brand);
+        console.log(myCar.model);
+
+        //pass by value 
+        let number=34;
+        let myNumber=number;
+        console.log(myNumber,number);
+        myNumber=50; //value change 
+        console.log(myNumber,number);
+
+        //pass by reference to just one place
+        const car6={
+            brand: 'Toyota'
+        }
+
+        const myCar2=car6;
+        console.log(myCar2, car6); 
+        myCar2.brand='Honda'; // change value
+        console.log(myCar2,car6);
+
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Object 2</title>
+</head>
+<body>
+    <h3>JS Object Properties and method</h3>
+    <script>
+        const Car = {
+            color: 'blue' ,
+            'the color': 'green'
+        };
+        console.log(Car);
+        console.log(Car.color);
+        console.log(Car['the color']);
+
+        const Car2={
+            brand: {
+                name: 'Ford'
+            },
+            color: 'black'
+        }
+        console.log(Car2);
+        console.log(Car2.brand.name);
+        console.log(Car2.color);
+//update properties
+        Car2.color='white';
+        Car2.brand.name='TOYOTA';
+        console.log(Car2);
+
+//add new properties
+    Car2.model='E-sport';
+        console.log(Car2);
+
+//delte a property
+        delete Car2.color;
+        console.log(Car2);
+//Object method
+
+const Car3={
+    brand : 'Ford' ,
+    model: 'Everest' ,
+    start: function() { 
+        console.log('Started');
+        console.log(`${this.brand} and ${this.model}`); //can call with this.
+    } , // dont forgot this 
+    goTo: function(destination='Mandalay'){ //default value 
+        console.log(`Going to ${destination}`)
+    }
+}
+Car3.start();
+Car3.goTo('Yangon');
+Car3.goTo();
+//arrow function nae not ok will show undefined
+    </script>
+</body>
+</html>
