@@ -1,0 +1,11 @@
+span { 
+    color: #ff0000; /*hex code*/
+    color: #f00; /*short hex code*/
+    color: rgb(255, 0, 0); /* range 0-255 if all 255 then white */
+    line-height: 50px;
+    letter-spacing: 10pt;
+}
+h3{
+    text-align: center;
+    text-transform: uppercase;
+}

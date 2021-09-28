@@ -1,0 +1,21 @@
+/*Universal Selector*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Tag/Element Selector*/
+h2{
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Attribute Selector*/
+a[target="_blank"]{
+    text-decoration: none;
+}
+
+input[type="text"]{
+    outline: none;
+}
