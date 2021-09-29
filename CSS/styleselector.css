@@ -19,3 +19,48 @@ a[target="_blank"]{
 input[type="text"]{
     outline: none;
 }
+
+/*ID selector*/
+#paragraph{
+    color:green;
+    word-spacing: 10px;
+    line-height: 30px;
+}
+ 
+/*class selector*/
+.class1{
+    color: hotpink;
+}
+
+/*desc selector*/
+.desc a {
+    color: indigo;
+
+}
+
+/*child selector*/
+.child > a { 
+    color: blue;
+}
+
+/*pseudo selector*/
+/*link*/
+a:link{
+    color: brown;
+}
+a:hover{
+    color: chartreuse;
+}
+a:active{
+    color: hotpink;
+}
+a:visited{
+    color: blue;
+}
+
+/*Target*/
+div:target{
+    color: chocolate;
+    border: 1px solid #f59;
+    background-color: lightblue;
+}
