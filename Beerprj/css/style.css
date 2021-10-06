@@ -1,0 +1,50 @@
+@font-face{
+    src:url(../Architects_Daughter/ArchitectsDaughter-Regular.ttf);
+    font-family: 'Architects Daughter', cursive;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.img{
+    width: 100px;
+    height:60px;
+    display: block;
+    margin-left: 10px;
+}
+
+.nav_background{
+    background-color: black;
+
+}
+
+.nav_brand{
+    display: inline-block;
+}
+
+.nav_background ul{
+    float: right;
+}
+
+.nav_background ul li {
+    display: inline-block;
+    color: white;
+    margin-right: 40px;
+    padding-top: 30px;
+}
+
+.brand_name{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_background ul li:hover{
+    color: yellow;
+    transform: translate(5px, -5px);
+    transition-duration: 0.5s;
+}
+
