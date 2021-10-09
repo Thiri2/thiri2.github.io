@@ -1,24 +1,22 @@
 @font-face{
-    src:url(../Architects_Daughter/ArchitectsDaughter-Regular.ttf);
-    font-family: 'Architects Daughter', cursive;
+    src:url(../GreatVibes/GreatVibes-Regular.ttf);
+    font-family: great;
 }
 
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Architects Daughter', cursive;
 }
 
 .img{
     width: 100px;
-    height:60px;
+    height: 70px;
     display: block;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 .nav_background{
     background-color: black;
-
 }
 
 .nav_brand{
@@ -34,17 +32,78 @@
     color: white;
     margin-right: 40px;
     padding-top: 30px;
+    text-transform: uppercase;
 }
 
 .brand_name{
     margin-left: 20px;
     text-decoration: none;
     color: white;
+    font-family: great;
 }
 
 .nav_background ul li:hover{
     color: yellow;
     transform: translate(5px, -5px);
     transition-duration: 0.5s;
+}
+
+.background{
+    background-image: url(../images/background.jpg);
+    height: 650px ;
+}
+
+.beerbar{
+    position: relative;
+    top: 190px;
+    left: 350px;
+    color: gold;
+    font-family: great;
+    font-size: 40px;
+}
+
+.shop{
+    border: 1px solid gold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin-left: 100px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 600px auto auto;
+}
+
+div.grid div{
+    border: 4px solid #212126 ;
+    padding: 30px 30px 30px 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+div.grid div.grid_one{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: left;
+    padding: 70px 50px 50px 90 px;
+}
+
+.perfect{
+    color: gold;
+}
+
+.read{
+    background-color: yellow;
+    color: black;
+    border-radius: 5px ;
+    padding: 8px 20px;
+    margin-top: 15px;
+}
+
+.para{
+    margin-top: 10px ;
 }
 

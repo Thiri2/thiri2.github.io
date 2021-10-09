@@ -26,7 +26,7 @@
         btnClearTimeOut.onclick = stopTimeOut;
 
         function showTimeOut(){
-            clockHandler = setTimeOut('showTime()', 5000);
+            clockHandler = setTimeout('showTime()', 5000);
         }
 
         function stopTimeOut(){
@@ -41,7 +41,7 @@
         }
 
         function showClock(){
-         clockHandler = setInterval('showTime()', 1000);
+         clockHandler = setInterval("showTime()", 1000);
         }
          //call after 1s so it become alive
     
@@ -49,8 +49,8 @@
             let now=new Date();
             let time=now.toLocaleTimeString();
 
-            document.querySelector('#clock').innerHTML=time; 
-            document.querySelector('#clock').innerHTML=now;
+            document.querySelector("#clock").innerHTML=time; 
+            document.querySelector("#clock").innerHTML=now;
 
         }
     </script>
