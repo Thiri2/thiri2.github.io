@@ -107,3 +107,60 @@ div.grid div.grid_one{
     margin-top: 10px ;
 }
 
+div.whitebackground img {
+    width: 500px;
+    height: 350px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-bottom: 50px;
+}
+
+div.background_text{
+    position: relative;
+    top: 100px;
+    left: 80px;
+    width: 90%;
+}
+
+.clear {
+    clear: both;
+}
+
+.background_body{
+    background-color: black;
+    color: white;
+    height: 300px;
+}
+
+.background_body_text{
+    position: relative;
+    top: 50px;
+    left: 90px;
+    width: 35%;
+    float: left;
+}
+
+div.background_body img{
+    margin-left: 120px;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.dec{
+    padding-left: 50px;
+}
+
+.feb{
+    position: relative;
+    padding-left: 50px;
+}
+
+div p {
+    padding-top: 15px;
+}
