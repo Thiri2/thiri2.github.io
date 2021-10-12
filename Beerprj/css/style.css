@@ -96,7 +96,7 @@ div.grid div.grid_one{
 }
 
 .read{
-    background-color: yellow;
+    background-color: gold;
     color: black;
     border-radius: 5px ;
     padding: 8px 20px;
@@ -149,18 +149,34 @@ div.background_body img{
 
 .grid1{
     display: grid;
-    grid-template-columns: auto auto;
-}
-
-.dec{
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-right: 50px;
     padding-left: 50px;
 }
 
-.feb{
-    position: relative;
-    padding-left: 50px;
-}
-
-div p {
+.grid1 p{
     padding-top: 15px;
+}
+
+.footer {
+    height: 100px;
+    background-color: black;
+    color: white;
+    margin-top: 70px;
+}
+
+footer a {
+    float: right;
+    margin-right: 40px;
+    padding-top: 30px;
+    color: gold;
+}
+
+.designedby{
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
 }
