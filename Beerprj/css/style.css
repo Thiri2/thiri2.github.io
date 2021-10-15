@@ -36,7 +36,7 @@
 }
 
 .brand_name{
-    margin-left: 20px;
+    margin-left: 35px;
     text-decoration: none;
     color: white;
     font-family: great;
@@ -179,4 +179,103 @@ footer a {
     float: left;
     margin-top: 40px;
     margin-left: 40px;
+}
+
+div i{
+    display: inline-block;
+}
+
+div.cart{
+    float: right;
+    margin-right: 10px;
+    padding-top: 15px;
+    color: white;
+}
+
+.cartback{
+    background-color: black;
+    height: 70px;
+}
+
+img {
+    margin-left: 290px;
+}
+
+h4.discount {
+    color: black;
+    margin-left: 450px;
+    padding-top: 4px;
+    font-family: great;
+    font-size: 25px;
+    font-weight: bold;
+    word-spacing: 10px;
+}
+
+div.h4{
+    background-color: lightgray;
+    height: 35px;
+}
+
+form #search{
+    margin-left: 420px;
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 9px;
+}
+
+h3.title{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    font-weight: 500px;
+}
+
+div.grid{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    background-color: white;
+}
+
+div img {
+    margin-left: 10px;
+}
+
+div.about{
+    margin: 50px;  
+}
+
+h2.us{
+    background-color: black;
+    text-align: center;
+    color: gold;
+    padding: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+div p {
+    line-height: 20px;
+}
+
+div.place h3{
+    color: gold;
+}
+
+div.places{
+    margin: 50px;
+    line-height: 25px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 45%;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+div.get {
+    position: absolute;
+    top: 230px;
+    left: 700px;
 }
