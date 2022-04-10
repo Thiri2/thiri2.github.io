@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Rendering</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+
+    <div id="app">
+        <!-- {{friends.length}} -->
+        <!-- to show index need (_ v-for = '(friend ,index) in friends') -->
+        <table border="1" cellpadding = '10'>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Age</th>    
+                    <th>Gender</th>
+                    <th>Detail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for = '(friend,index) in girlfriends'>
+                    <td>{{++index}}</td>
+                    <td>{{friend.name}}</td>
+                    <td>{{friend.age}}</td>
+                    <td>{{friend.gender}}</td>
+                    <td> 
+                        <button @click = 'more(--index)'>More</button> 
+                    </td>
+                </tr>
+            </tbody> 
+         </table>
+         {{arrLength}}
+    </div>
+    
+    <script>
+        const app = Vue.createApp({
+            data(){
+                return {
+                    name : 'Thiri',
+                    friends : [
+                        {name : 'susu', age : 23, gender : 'female'},
+                        {name : 'koko', age : 33, gender : 'male'},
+                        {name : 'tuntun', age : 26, gender : 'male'},
+                        {name : 'may', age : 13, gender : 'female'},
+                    ]
+                }
+            },
+            methods : {
+                more(index){
+                    let friend = this.friends[index]
+                    alert(friend.name)
+                }
+            },
+            computed : {
+                arrLength(){
+                    return this.friends.length
+                },
+                boyfriends(){
+                    return this.friends.filter(row => row.gender == 'male')
+                },
+                girlfriends(){
+                    return this.friends.filter(row => row.gender == 'female')
+                }
+            }
+        })
+        app.mount('#app')
+    </script>
+</body>
+</html>
+
+<!-- methods and computed the same - computed stored/caching  -->

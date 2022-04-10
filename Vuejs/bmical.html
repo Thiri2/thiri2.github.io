@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script src="https://unpkg.com/vue@3"></script>
+
+</head>
+<body>
+    <h3>BMI Calculator</h3>
+    <div id="bmi">
+        <h4>Enter your height in cm : </h4>
+        <input type="text" v-model.number="height">
+        <h4>Enter your weight in kg: </h4>
+        <input type="text" v-model.number= "weight"> <br><br>
+        <button @click="calculate">Calculate</button>
+        <h3>Your height is {{height}} cm </h3>
+        <h3>Your weight is {{weight}} kg</h3>
+        <h3>Your BMI is {{result}}</h3>
+        <h3 v-if = 'result<18.5'> You are Underweight</h3>
+        <h3 v-else-if = 'result>=18.5 && result<=24.9'>You are Normal weight</h3>
+        <h3 v-else-if = 'result>=25 && result <=29.9'>You are Overweight</h3>
+        <h3 v-else>You are Obese</h3> 
+    </div>
+    <script src="bmi.js"></script>
+</body>
+</html>

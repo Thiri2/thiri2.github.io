@@ -1,0 +1,32 @@
+vue
+
+const app = new Vue ({
+data : {
+
+},
+methods : {  update for data
+
+},
+computed : { assest for data
+
+},
+})
+
+
+
+vuex 
+
+const store = new Vuex.Store ({
+    state : {
+
+    },
+    mutation : { commit+track state changes
+
+    },
+    actions : { update for state
+
+    },
+    getters : { global , assest for state
+
+    }
+})
