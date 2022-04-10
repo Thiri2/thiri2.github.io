@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url(assets/fonts/Poppins-Black.ttf);
+}
+
+.primary-color {
+    color: #fdb03d;
+}
+
+.secondary-color {
+    color: #292560;
+}
+
+.custom-bg-secondary-color {
+   background-color: #292560;
+}
+
+.font-color {
+    color : #707070;
+}
+
+body {
+    font-family: 'Poppins-Regular' !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins-Bold' !important;
+}
+
+#topheader a:hover {
+    color: #fdb03d;
+    transition: .5s all;
+}
+
+#headerbottom .searchBtn{
+    background-color: #fdb03d !important;
+    color: white;
+    border-color: #fdb03d;
+}
+
+#headerbottom .searchBtn:hover{
+    color: #292560;
+    transition: .5s all;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white !important;
+    font-size: 15px;
+    font-family: 'Poppins-Bold';
+}
+
+.navbar-dark .navbar-nav .nav-link.active{
+    color: #fdb03d !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #fdb03d !important;
+    transition: .5s all;
+}
+
+#banner .banner1-item {
+    background-image: url('assets/img/img4.png');
+    background-size: cover;
+}
+
+#banner .banner2-item {
+    background-image: url('assets/img/img3.png');
+    background-size: cover;
+}
+
+#banner .banner3-item {
+    background-image: url('assets/img/img2.png');
+    background-size: cover;
+}
+
+#banner .banner4-item {
+    background-image: url('assets/img/img1.png');
+    background-size: cover;
+}
+
+#banner .banner-style{
+    min-height: 70vh;
+}
+
+.mybtn {
+    background-color: #292560 !important;
+    border-color: #292560 !important;
+    
+}
+
+.mybtn:hover {
+    background-color: #fdb03d !important;
+    border-color: #fdb03d !important;
+    transition: .5s all;
+}
+
+.product-new-badge {
+    background-color: #ff2978;
+    color: white;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 400px;
+    font-size: 12px;
+    left: 10px;
+    top: 10px;
+}
+
+.product-new-badge2 {
+    background-color: #fdb03d;
+    color: white;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 400px;
+    font-size: 12px;
+    left: 10px;
+    top: 10px;
+}
+
+#ad .headphone{
+    background-image: url('assets/img/ad4.jpg');
+    background-size: cover;
+    height: 450px;
+    width: 500%;
+}
